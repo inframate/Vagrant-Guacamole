@@ -1,4 +1,5 @@
 # vagrant-guacamole
+Set up a Jump Point server (RDP, VNC, SSH, Telnet) with web Interface (clientless remote access).
 Vagrantfile and script to set up a CentOS 7.1 VM on Virtualbox and provision it with guacamole 0.9.9
 
 Vagrantfile: Uses "bento/ubuntu-16.04" Vagrant Box to set up an Ubuntu Xenial 16.04 Server with :
