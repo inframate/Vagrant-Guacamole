@@ -252,6 +252,10 @@ fi
 }
 
 yumupdate () {
+#correct /etc/hosts
+sleep 1 | echo -e "\nCorrecting /etc/hosts file...\n"; echo -e "\nUpdating CentOS...\n" >> $logfile  2>&1
+sed -ri 's/127\.0\.0\.1\s.*/127.0.0.1 localhost localhost.localdomain/' /etc/hosts
+
 sleep 1 | echo -e "\nUpdating CentOS...\n"; echo -e "\nUpdating CentOS...\n" >> $logfile  2>&1
 yum update -y
 }
